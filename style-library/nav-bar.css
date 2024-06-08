@@ -41,6 +41,12 @@ header {
     color: var(--gray);
     text-decoration: none;
 }
+
+.nav-link:hover
+{
+    color: var(--white);
+}
+
 .nav-link[href="index.html"] {
     color: var(--white);
 }
