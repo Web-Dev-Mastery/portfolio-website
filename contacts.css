@@ -187,3 +187,9 @@
 {
     color: var(--white);
 }
+
+/* footer style */
+footer
+{
+    margin-top: 83px;
+}
