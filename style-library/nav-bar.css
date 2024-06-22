@@ -1,3 +1,4 @@
+/* Navbar */
 header {
     padding-top: 32px;
     padding-bottom: 8px;
@@ -11,6 +12,16 @@ header {
     margin: 0 auto;
 }
 
+@media (max-width: 1024px) {
+    header {
+        padding: 0;
+    }
+    .navbar {
+        padding: 16px;
+        padding-bottom: 0;
+    }
+}
+
 .logo-wrapper {
     display: flex;
     align-items: center;
@@ -19,7 +30,7 @@ header {
 .logo-img {
     width: 16px;
     height: 16px;
-    margin-right: 2.5px;
+    margin-right: 8px;
 }
 
 .logo {
@@ -31,22 +42,26 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
+    gap: 32px;
 }
 
-.nav-item {
-    margin: 0 16px;
+.burger-icon {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .nav-list {
+        display: none;
+    }
+    .burger-icon {
+        display: block;
+    }
 }
 
 .nav-link {
     color: var(--gray);
     text-decoration: none;
 }
-
-.nav-link:hover
-{
-    color: var(--white);
-}
-
 .nav-link[href="index.html"] {
     color: var(--white);
 }
