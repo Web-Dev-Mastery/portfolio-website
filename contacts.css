@@ -6,12 +6,26 @@
     gap: 25px;
 }
 
+@media (max-width: 1024px) {
+    .main-container {
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+}
 /* Connects section */
 .contacts {
     display: flex;
     flex-direction: column;
     gap: 46px;
     padding-top: 53px;
+}
+
+@media (max-width: 480px) {
+    .contacts {
+        padding-top: 34px;
+        gap: 20px;
+    }
 }
 
 .contacts-header {
@@ -42,6 +56,13 @@
 .contacts-info {
     display: flex;
     gap: 117px;
+}
+
+@media (max-width: 480px) {
+    .contacts-info {
+        flex-direction: column;
+        gap: 14px;
+    }
 }
 
 .my-info {
@@ -84,7 +105,18 @@
     flex-direction: column;
     gap: 16px;
 }
+@media (max-width: 1024px) {
+    .contacts-info {
+        gap: 10px;
+    }
+    .support-connection {
+        flex-direction: column;
+    }
 
+    .support, .connection {
+        padding: 10px;
+    }
+}
 .connection h3 {
     margin: 0px;
     font-size: 16px;
@@ -162,6 +194,8 @@
 }
 
 /* footer style */
-footer {
-    margin-top: 83px;
+@media (min-width: 480px) {
+    footer {
+        margin-top: 83px;
+    }
 }
