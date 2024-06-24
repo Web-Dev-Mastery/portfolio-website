@@ -1,0 +1,67 @@
+@use 'mixins';
+$desktop-width: 1024px;
+$mobile-width: 480px;
+
+/* Navbar */
+header {
+    padding-top: 32px;
+    padding-bottom: 8px;
+    @media (max-width: $desktop-width) {
+        padding: 0px;
+    }
+
+    .navbar {
+        @include mixins.flex-row(space-between, center, 0px);
+        max-width: $desktop-width;
+        margin: 0 auto;
+        @media (max-width: $desktop-width) {
+            padding: 16px;
+            padding-bottom: 0px;
+        }
+
+        .logo-wrapper {
+            @include mixins.flex-row($align: center);
+
+            .logo-img {
+                width: 16px;
+                height: 16px;
+                margin-right: 8px;
+            }
+            
+            .logo {
+                margin: 0;
+                font-size: 16px;
+            }
+        }
+
+        .nav-list {
+            margin: 0;
+            padding: 0;
+            @include mixins.flex-row($gap: 32px);
+            @media (max-width: $mobile-width) {
+                display: none;
+            }
+
+            .nav-link {
+                color: var(--gray);
+                text-decoration: none;
+            }
+            .nav-link[href="index.html"] {
+                color: var(--white);
+            }
+            
+            .nav-link::before {
+                content: '#';
+                color: var(--primary);
+                margin-right: 1px;
+            }
+        }
+        
+        .burger-icon {
+            display: none;
+            @media (max-width: $mobile-width) {
+                display: block;
+            }
+        }
+    }
+}
