@@ -1,30 +1,32 @@
 /* Social links */
 .social-links {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    left: 17px;
-    top: 0;
-    gap: 8px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  left: 17px;
+  top: 0;
 }
 @media (max-width: 1024px) {
-    .social-links {
-        display: none;
-    }
+  .social-links {
+    display: none;
+  }
 }
-
-.social-links-line {
-    width: 1px;
-    height: 191px;
-    background-color: var(--gray);
+.social-links .social-links-line {
+  width: 1px;
+  height: 191px;
+  background-color: var(--gray);
 }
-
 .social-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
+
+/*# sourceMappingURL=social-links.css.map */
