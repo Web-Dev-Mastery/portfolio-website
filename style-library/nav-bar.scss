@@ -42,16 +42,16 @@ header {
             }
 
             .nav-link {
-                color: var(--gray);
+                color: $gray;
                 text-decoration: none;
             }
             .nav-link[href="index.html"] {
-                color: var(--white);
+                color: $white;
             }
             
             .nav-link::before {
                 content: '#';
-                color: var(--primary);
+                color: $primary;
                 margin-right: 1px;
             }
         }

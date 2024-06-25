@@ -1,3 +1,12 @@
+:export {
+  mobile-width: 480px;
+  desktop-width: 1024px;
+  primary: #C778DD;
+  gray: #ABB2BF;
+  background: #282C33;
+  white: #FFFFFF;
+}
+
 /* Social links */
 .social-links {
   position: fixed;
@@ -17,7 +26,7 @@
 .social-links .social-links-line {
   width: 1px;
   height: 191px;
-  background-color: var(--gray);
+  background-color: #ABB2BF;
 }
 .social-links ul {
   margin: 0;

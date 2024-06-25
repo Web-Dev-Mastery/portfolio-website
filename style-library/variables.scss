@@ -1,7 +1,18 @@
+// screen sizes
 $mobile-width: 480px;
 $desktop-width: 1024px;
+
+// colors
+$primary: #C778DD;
+$gray: #ABB2BF;
+$background: #282C33;
+$white: #FFFFFF;
 
 :export {
     mobile-width: $mobile-width;
     desktop-width: $desktop-width;
+    primary: $primary;
+    gray: $gray;
+    background: $background;
+    white: $white;
 }

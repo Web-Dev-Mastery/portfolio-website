@@ -1,6 +1,10 @@
 :export {
   mobile-width: 480px;
   desktop-width: 1024px;
+  primary: #C778DD;
+  gray: #ABB2BF;
+  background: #282C33;
+  white: #FFFFFF;
 }
 
 .main-container {
@@ -45,17 +49,17 @@
 .main-container .contacts .contacts-header h2 {
   font-weight: 600;
   font-size: 32px;
-  color: var(--white);
+  color: #FFFFFF;
   margin: 0px;
 }
 .main-container .contacts .contacts-header h2::before {
   content: "/";
-  color: var(--primary);
+  color: #C778DD;
 }
 .main-container .contacts .contacts-header p {
   font-weight: 400;
   font-size: 16px;
-  color: var(--white);
+  color: #FFFFFF;
   margin: 0px;
 }
 .main-container .contacts .contacts-info {
@@ -82,7 +86,7 @@
 .main-container .contacts .contacts-info .my-info {
   font-size: 16px;
   font-weight: 500;
-  color: var(--gray);
+  color: #ABB2BF;
   margin: 0px;
 }
 .main-container .contacts .contacts-info .support-connection {
@@ -99,7 +103,7 @@
 }
 .main-container .contacts .contacts-info .support-connection div {
   padding: 16px;
-  border: 1px var(--gray) solid;
+  border: 1px #ABB2BF solid;
   width: max-content;
   display: flex;
   flex-direction: column;
@@ -151,12 +155,12 @@
   padding: 6px 4px;
 }
 .main-container .contacts .contacts-info .support-connection .connection ul li a {
-  color: var(--gray);
+  color: #ABB2BF;
   font-size: 16px;
   font-weight: 400;
 }
 .main-container .contacts .contacts-info .support-connection .connection ul li a:hover {
-  color: var(--white);
+  color: #FFFFFF;
 }
 .main-container .media {
   /* Media section */
@@ -173,7 +177,7 @@
 }
 .main-container .media h2::before {
   content: "#";
-  color: var(--primary);
+  color: #C778DD;
 }
 .main-container .media .media-links {
   margin: 0px;
@@ -195,10 +199,10 @@
   padding: 6px 4px;
 }
 .main-container .media .media-links li a {
-  color: var(--gray);
+  color: #ABB2BF;
 }
 .main-container .media .media-links li a:hover {
-  color: var(--white);
+  color: #FFFFFF;
 }
 
 footer {
