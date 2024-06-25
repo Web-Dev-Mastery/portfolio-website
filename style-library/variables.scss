@@ -1,0 +1,7 @@
+$mobile-width: 480px;
+$desktop-width: 1024px;
+
+:export {
+    mobile-width: $mobile-width;
+    desktop-width: $desktop-width;
+}
