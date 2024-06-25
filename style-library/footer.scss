@@ -1,7 +1,5 @@
 @use 'mixins';
-
-$desktop-width: 1024px;
-$mobile-width: 480px;
+@use 'variables' as *;
 
 /* Footer */
 footer {
