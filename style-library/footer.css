@@ -1,77 +1,87 @@
+:export {
+  mobile-width: 480px;
+  desktop-width: 1024px;
+  primary: #C778DD;
+  gray: #ABB2BF;
+  background: #282C33;
+  white: #FFFFFF;
+}
+
 /* Footer */
 footer {
-    border-top: 1px solid var(--gray);
-    padding: 32px 0;
-    margin-top: 145px;
+  border-top: 1px solid #ABB2BF;
+  padding: 32px 0;
+  margin-top: 145px;
 }
-
-.footer-container {
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
 @media (max-width: 480px) {
-    footer {
-        margin-top: 45px;
-        padding: 16px 0;
-    }
-    .footer-content {
-        flex-direction: column;
-        gap: 16px;
-    }
-    .footer-container {
-        padding: 16px;
-    }
+  footer {
+    margin-top: 45px;
+    padding: 16px 0;
+  }
+}
+footer .footer-container {
+  max-width: 1024px;
+  margin: 0 auto;
 }
 @media (max-width: 1024px) {
-    .footer-container {
-        padding: 16px;
-    }
+  footer .footer-container {
+    padding: 16px;
+  }
 }
-
-.footer-content {
+footer .footer-container .footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0px;
+}
+@media (max-width: 480px) {
+  footer .footer-container .footer-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}
+footer .footer-container .footer-content .footer-info .footer-logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+footer .footer-container .footer-content .footer-info .footer-logo-wrapper .footer-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 9px;
+}
+footer .footer-container .footer-content .footer-info .footer-logo-wrapper .footer-logo h4 {
+  margin: 0;
+}
+footer .footer-container .footer-content .footer-info .footer-logo-wrapper a {
+  color: #ABB2BF;
+  transition: color 0.5s ease;
+}
+footer .footer-container .footer-content .footer-info .footer-logo-wrapper a:hover {
+  color: #FFFFFF;
+}
+footer .footer-container .footer-content .footer-info p {
+  color: #FFFFFF;
+  margin-top: 16px;
+}
+footer .footer-container .footer-content .footer-media h3 {
+  margin-bottom: 12px;
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+footer .footer-container .copyright {
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 32px;
 }
 
-.footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 9px;
-}
-
-.footer-logo h4 {
-    margin: 0;
-}
-
-.footer-logo-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-}
-
-.footer-logo-wrapper a {
-    color: var(--gray);
-    transition: color 0.5s ease;
-}
-.footer-logo-wrapper a:hover {
-    color: var(--white);
-}
-
-.footer-info p {
-    color: var(--white);
-    margin-top: 16px;
-}
-
-.footer-media h3 {
-    margin-bottom: 12px;
-    margin-top: 0;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.copyright {
-    text-align: center;
-    margin-top: 48px;
-    margin-bottom: 32px;
-}
+/*# sourceMappingURL=footer.css.map */

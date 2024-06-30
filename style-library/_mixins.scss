@@ -1,0 +1,15 @@
+@mixin flex($direction: row, $justify:flex-start, $align:flex-start, $gap: 0px) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin flex-column($justify:flex-start, $align:flex-start, $gap: 0px) {
+    @include flex(column, $justify, $align, $gap);
+}
+
+@mixin flex-row($justify:flex-start, $align:flex-start, $gap: 0px) {
+    @include flex(row, $justify, $align, $gap);
+}

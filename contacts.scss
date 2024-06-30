@@ -1,0 +1,178 @@
+@use 'style-library/mixins';
+@use 'style-library/variables' as *;
+
+.main-container {
+    /* Main container */
+    width: $desktop-width;
+    margin: auto;
+    @include mixins.flex-column($gap: 25px);
+    @media (max-width: $desktop-width) {
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+
+    .contacts {
+        /* Connects section */
+        @include mixins.flex-column($gap: 46px);
+        padding-top: 53px;
+        @media (max-width: $mobile-width) {
+            padding-top: 34px;
+            gap: 20px;
+        }
+
+        .contacts-header {
+            @include mixins.flex-column($gap: 14px);
+
+            h2 {
+                font-weight: 600;
+                font-size: 32px;
+                color: $white;
+                margin: 0px;
+            }
+
+            h2::before {
+                content: "/";
+                color: $primary;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 16px;
+                color: $white;
+                margin: 0px;
+            }
+            
+        }
+
+        .contacts-info {
+            @include mixins.flex-row($gap: 117px);
+            @media (max-width: $desktop-width) {
+                gap: 10px;
+            }
+            @media (max-width: $mobile-width) {
+                @include mixins.flex-column($gap: 14px);
+            }
+
+            .my-info {
+                font-size: 16px;
+                font-weight: 500;
+                color: $gray;
+                margin: 0px;
+            }
+
+            .support-connection {
+                @include mixins.flex-row($gap: 16px);
+                @media (max-width: $desktop-width) {
+                    flex-direction: column;
+                }
+
+                div
+                {
+                    padding: 16px;
+                    border: 1px $gray solid;
+                    width: max-content;
+                    @include mixins.flex-column();
+                    @media (max-width: $desktop-width) {
+                        padding: 10px;
+                    }
+
+                    h3{
+                        margin: 0px;
+                        font-size: 16px;
+                    }
+                }
+
+                .support {
+                    gap: 8px;
+
+                    h3 {
+                        font-weight: 500;
+                    }
+
+                    p {
+                        margin: 0px;
+                    }
+                }
+
+                .connection {
+                    gap: 16px;
+
+                    h3 {
+                        font-weight: 600;
+                    }
+
+                    ul {
+                        padding: 0px;
+                        margin: 0px;
+                        @include mixins.flex-column($gap: 8px);
+
+                        li {
+                            @include mixins.flex-row($gap: 5px, $align: center);
+
+                            img {
+                                padding: 6px 4px;
+                            }
+
+                            a {
+                                color: $gray;
+                                font-size: 16px;
+                                font-weight: 400;
+                            }
+
+                            a:hover {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .media {
+        /* Media section */
+        @include mixins.flex-column($gap: 22px);
+
+        h2 {
+            font-size: 32px;
+            font-weight: 500;
+            margin: 0px;
+        }
+
+        h2::before {
+            content: "#";
+            color: $primary;
+        }
+
+        .media-links {
+            margin: 0px;
+            padding: 0px;
+            @include mixins.flex-row($gap: 22px);
+
+            li {
+                @include mixins.flex-row($gap: 5px, $align: center);
+
+                img {
+                    padding: 6px 4px;
+                }
+
+                a {
+                    color: $gray;
+                }
+
+                a:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    /* footer style */
+    @media (max-width: $mobile-width) {
+        margin-top: 83px;
+    }
+}

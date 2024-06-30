@@ -1,0 +1,25 @@
+@use 'mixins';
+@use 'variables' as *;
+
+/* Social links */
+.social-links {
+    position: fixed;
+    @include mixins.flex-column(center, center, 8px);
+    left: 17px;
+    top: 0;
+    @media (max-width: $desktop-width) {
+        display: none;
+    }
+
+    .social-links-line {
+        width: 1px;
+        height: 191px;
+        background-color: $gray;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        @include mixins.flex-column(center, center, 8px);
+    }   
+}
