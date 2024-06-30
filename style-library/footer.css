@@ -10,6 +10,25 @@ footer {
     margin: 0 auto;
 }
 
+@media (max-width: 480px) {
+    footer {
+        margin-top: 45px;
+        padding: 16px 0;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .footer-container {
+        padding: 16px;
+    }
+}
+@media (max-width: 1024px) {
+    .footer-container {
+        padding: 16px;
+    }
+}
+
 .footer-content {
     display: flex;
     justify-content: space-between;
